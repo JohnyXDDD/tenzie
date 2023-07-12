@@ -63,7 +63,7 @@ function App() {
         {dicessElements}
       </div>
       <button onClick={tenzies ? newGame : rollDicess}>{tenzies ? 'New Game' : 'Roll'}</button>
-      {best != 0 && <h3>Your best: {best} rolls</h3>}
+      {best !== 0 && <h3>Your best: {best} rolls</h3>}
     </main>
   );
 }
