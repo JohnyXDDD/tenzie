@@ -1,10 +1,10 @@
-export default function Die({value,isHeld,holdingFunction}){
-    const image= isHeld ? `${value}-g`: `${value}`
-    const style={
+export default function Die({ value, isHeld, holdingFunction }) {
+    const image = isHeld ? `${value}-g` : `${value}`
+    const style = {
         backgroundImage: `url(images/dice${image}.png)`
     }
-    return(
-        <div 
+    return (
+        <div
             className={`die`}
             onClick={holdingFunction}
             style={style}>
